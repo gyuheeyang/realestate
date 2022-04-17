@@ -9,12 +9,12 @@ import java.io.PrintWriter;
 
 public class merge {
 
-	public static void main(String[] args) throws IOException {
-		// TODO Auto-generated method stub
-		
-		MergeFiles();
-		
-	}
+//	public static void main(String[] args) throws IOException {
+//		// TODO Auto-generated method stub
+//		
+//		MergeFiles();
+//		
+//	}
 	
 	public static void MergeFiles () throws IOException {
 		  File dir = new File("C:\\Users\\¾ç±ÔÈñ\\Desktop\\filesforpj1");
@@ -42,7 +42,7 @@ public class merge {
 	            
 	            if (cnt >= 16) {
 	               line = br.readLine();
-	               System.out.println(line);
+	             //  System.out.println(line);
 	               
 	               try {
 	                  if(line.contains("\",\"")) {
@@ -62,7 +62,7 @@ public class merge {
 	               
 	               
 	                  pw.println(line);
-	                  System.out.println(line);
+	    //              System.out.println(line);
 	               
 	               
 	            }
