@@ -52,7 +52,9 @@ public class SquarePrice {
 							if (cutLine[0].contains(locationStrings[i]) == true) {
 								sumPrice[i][j] += price;
 								sumSize[i][j] += size;
-								squareArr[i][j] = sumPrice[i][j] / (sumSize[i][j] * 3.3);
+//								squareArr[i][j] 
+//								System.out.println();
+								squareArr[i][j] = sumPrice[i][j] / (sumSize[i][j] / 3.3);
 							}
 						}
 					}
@@ -66,6 +68,8 @@ public class SquarePrice {
 			}
 			cnt++;
 		}
+		
+		
 		for (int i = 0; i < yearCnt.length; i++) {
 			System.out.println(yearCnt[i]);
 			pw.print(yearCnt[i]+ "연도\n"); 
@@ -73,7 +77,7 @@ public class SquarePrice {
 				System.out.print(locationStrings[j]);
 				System.out.println("의 평당가격: " + squareArr[j][i]);
 //				pw.print(locationStrings[j]+ "의 평당가격," + squareArr[j][i]+"\n"); 
-				pw.printf("%s의 평당가격, %f\n", locationStrings[j], squareArr[j][i]); 
+				pw.printf("%s, %f\n", locationStrings[j], squareArr[j][i]); 
 //				System.out.println("sumPrice"+sumPrice[i] +"sumSize"+ sumSize[i]);
 			}
 		}
